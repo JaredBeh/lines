@@ -6,9 +6,10 @@ color = [ 0, 255, 0 ]
 
 #octant I
 draw_line( screen, 0, 0, XRES - 1, YRES - 75, color )
-'''
+
 #octant II
 draw_line( screen, 0, 0, XRES - 75, YRES - 1, color )
+'''
 #octant VIII
 draw_line( screen, 0, YRES - 1, XRES - 1, 75, color )
 #octant VII
