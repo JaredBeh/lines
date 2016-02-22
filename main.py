@@ -2,16 +2,20 @@ from display import *
 from draw import *
 
 screen = new_screen()
-color = [ 0, 255, 0 ]
-
+color = [ 0, 0, 255 ]
+for x in range(0,XRES,55):
+    for y in range(0,YRES,5):
+        draw_line(screen,x,y,184,184,color)
+'''
 #octant I
 draw_line( screen, 0, 0, XRES - 1, YRES - 75, color )
 
 #octant II
 draw_line( screen, 0, 0, XRES - 75, YRES - 1, color )
-'''
+
 #octant VIII
 draw_line( screen, 0, YRES - 1, XRES - 1, 75, color )
+
 #octant VII
 draw_line( screen, 0, YRES - 1, XRES - 75, 0, color )
 
@@ -20,6 +24,7 @@ color[ GREEN ] = 0
 color[ RED ] = MAX_COLOR
 #octant V
 draw_line( screen, XRES - 1, YRES - 1, 0, 75, color )
+
 #octant VI
 draw_line( screen, XRES - 1, YRES - 1, 75, 0, color )
 #octant IV
